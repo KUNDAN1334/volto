@@ -63,10 +63,8 @@ class AlbumView extends React.Component {
     const { content } = this.props;
     const Container =
       config.getComponent({ name: 'Container' }).component || SemanticContainer;
-    const PreviewImage = config.getComponent({
-      name: 'PreviewImage',
-    }).component;
-
+    const PreviewImage = config.getComponent({ name: 'PreviewImage' })
+      .component;
     return (
       <Container className="view-wrapper">
         <article id="content">
